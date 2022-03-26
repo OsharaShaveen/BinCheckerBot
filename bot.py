@@ -32,7 +32,7 @@ async def start(event):
         await event.reply("**Bin-Checker is Alive**")
         return
     await event.reply(f"**Heya {event.sender.first_name}**\nIts a Bin-Checker Bot To Check Your Bins Are Valid Or Not.", buttons=[
-    [Button.url("Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", "https://github.com/OsharaShaveen/BinCheckerBot")]
+    [Button.url("𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍", "https://t.me/WhiteDevilOp999")]
     ])
 
 @bin.on(events.NewMessage(pattern="^[!?/]help$"))
@@ -46,7 +46,7 @@ __අනේහ් මට උදව් කරන්ඩහ්__
 - /help - To Get Help Menu
 - /bin - To check is your bin valid or not
 """
-    await event.reply(text, buttons=[[Button.url("Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", "https://github.com/TgxBotz/Bin-Checker")]])
+    await event.reply(text, buttons=[[Button.url("Sᴏᴜʀᴄᴇ Cᴏᴅᴇ", "https://github.com/OsharaShaveen/BinCheckerBot")]])
 
 @bin.on(events.NewMessage(pattern="^[!?/]bin"))
 async def binc(event):
@@ -77,7 +77,6 @@ async def binc(event):
 <b>Checked By - @{me}</b>
 <b>User-ID - {event.sender_id}</b>
 """
-        await event.reply(text, buttons=[[Button.url("𝘿𝙀𝙑𝙀𝙇𝙊𝙋𝙀𝙍", "https://t.me/WhiteDevilOp999")]])
         await xx.edit(valid, parse_mode="HTML")
     except IndexError:
        await xx.edit("Plese provide a bin to check\n__`/bin yourbin`__")
