@@ -82,7 +82,7 @@ async def binc(event):
        await xx.edit("Plese provide a bin to check\n__`/bin yourbin`__")
     except KeyError:
         me = (await event.client.get_me()).username
-        await xx.edit(f"**➤ Invalid Bin:**\n\n**Bin -** `{input}`\n**Status -** `Invalid Bin`\n\n**Checked By -** @{me}\n**User-ID - {event.sender_id}**")
+        await xx.edit(f"**➤ Invalid Bin:**\n\n**Bin -** `{input}`\n**Status -** `Invalid Bin`\n\n**Checked By -** @{me}\n**User-ID - ```{event.sender_id}```")
 
 print ("Successfully Started")
 bin.run_until_disconnected()
